@@ -5,3 +5,7 @@ Install-Package MediatR
 Install-Package MediatR.Extensions.Microsoft.DependencyInjection
 Install-Package Swashbuckle.AspNetCore
 Install-Package Swashbuckle.AspNetCore.Swagger
+
+
+Install-Package FluentValidation
+Install-Package FluentValidation.DependencyInjectionExtensions

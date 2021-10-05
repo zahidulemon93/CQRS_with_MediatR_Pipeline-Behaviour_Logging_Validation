@@ -9,11 +9,11 @@ namespace CQRS_with_MediatR.Context
 {
     public class ApplicationContext : DbContext, IApplicationContext
     {
+        public ApplicationContext(DbContextOptions<ApplicationContext> options) : base(options)
+        {
+        }
         public DbSet<Product> Products { get; set; }
-        public ApplicationContext(DbContextOptions<ApplicationContext> options)
-            : base(options)
-        { }
-        public async Task<int> SaveChanges()
+        public async Task<int> SaveChangesAsync()
         {
             return await base.SaveChangesAsync();
         }

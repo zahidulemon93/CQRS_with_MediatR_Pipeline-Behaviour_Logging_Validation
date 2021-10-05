@@ -8,6 +8,6 @@ namespace CQRS_with_MediatR.Context
     {
         DbSet<Product> Products { get; set; }
 
-        Task<int> SaveChanges();
+        Task<int> SaveChangesAsync();
     }
 }
